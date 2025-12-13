@@ -14,6 +14,7 @@ int main()
         printf("4. Division (/)\n");
         printf("5. Modulo (%%)\n");
         printf("6. Percentage\n");
+        printf("7. Find Odd or Even number\n");
         printf("0. Exit code\n");
 
         printf("Choose an option : ");
@@ -24,7 +25,7 @@ int main()
             printf("Exiting Calculator...\n");
             break;
         }
-        else if (choice < 0 || choice > 6)
+        else if (choice < 0 || choice > 7)
         {
             printf("Error! Invalid option. Try again.\n");
             continue;
@@ -43,8 +44,9 @@ int main()
             printf("Modulo = %d\n", (int)result);
         }
 
+
        
-        if (choice == 6)
+        else if (choice == 6)
         {
             float obtain, total;
 
@@ -62,6 +64,20 @@ int main()
 
             result = (obtain / total) * 100;
             printf("Percentage = %.2f%%\n", result);
+            continue;
+        }
+
+        else if(choice == 7) {
+            int a;
+            printf("Enter a number to find Even or Odd");
+            scanf("%d", &a);
+
+            if(a % 2 == 0) {
+                printf("%d is a Even number.\n", a);
+            }
+            else {
+                printf("%d is a Odd number.\n", a);
+            }
             continue;
         }
 
