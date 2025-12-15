@@ -42,6 +42,8 @@ int main()
 
             result = a % b;
             printf("Modulo = %d\n", (int)result);
+            
+            continue;
         }
 
 
