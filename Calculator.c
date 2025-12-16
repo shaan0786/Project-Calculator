@@ -86,7 +86,7 @@ int main()
         printf("Enter numbers (Press 0 to stop):\n");
         scanf("%f", &num);
 
-        result = num;  
+        result = num;
 
         while (1)
         {
