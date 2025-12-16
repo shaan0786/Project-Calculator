@@ -4,6 +4,9 @@ int main()
 {
     int choice;
     float num, result;
+    printf("----- MENU DRIVEN CALCULATOR -----\n");
+    printf("\tDeveloped By Shaan\n");
+    printf("---------------------------------");
 
     while (1)
     {
